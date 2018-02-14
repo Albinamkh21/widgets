@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if gt IE 9]>
+<html class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !IE]>
+<html dir="ltr" lang="en-US">
+<![endif]-->
+<!-- START HEAD -->
+<head>
+<meta charset="UTF-8" />
+<!-- this line will appear only if the website is visited with an iPad -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes" />
+<meta name="description" content = " {{ isset($meta_desc) ? $meta_desc: '' }}">
+<meta name="keywords" content = " {{ isset($keywords) ? $keywords: '' }}">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<title> {{ $title or 'Pink' }}</title>
+<link rel="stylesheet" id="custom-css" href="css/main.css" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<body>
+<div class="container"></div>
+<section class="section slider">
+  <div class="slider__list-wrap">
+    <ul class="slider__list">
+      <li class="slider__item active"><img class="slider__pic" src="images/slider/1.jpeg"/></li>
+      <li class="slider__item"><img src="images/slider/2.jpeg"/></li>
+      <li class="slider__item"><img src="images/slider/3.jpeg"/></li>
+      <li class="slider__item "><img src="images/slider/4.jpeg"/></li>
+    </ul>
+    <ul class="slider_dots"></ul>
+  </div>
+  <div class="slider__controls"><a class="slider__controls-button slider__controls-button_next">></a><a class="slider__controls-button slider__controls-button_prev"><</a></div>
+</section></body>
+<!-- END BODY -->
+</html>
