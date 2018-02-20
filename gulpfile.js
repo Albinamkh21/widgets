@@ -46,7 +46,8 @@ $.gulp.task('default', $.gulp.series(
 
     'sass',
     'pug',
-    'js:process'
+    'js:process',
+    'js:foundation'
 
 
 

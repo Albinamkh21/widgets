@@ -29,7 +29,7 @@
 <link rel="stylesheet" id="custom-css" href="css/main.css" type="text/css" media="all" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<body>
+<script type="text/javascript" src="js/foundation.js"></script><body>
 <div class="container"></div>
 <section class="section slider">
   <div class="slider__list-wrap">
@@ -69,16 +69,16 @@
     </li>
   </ul>
 </div>
-
-
-<input type="text" name="team" id="favorite_dish"
-       list="dish_list">
-<datalist id="dish_list">
-  <option>Борщ</option>
-  <option>Суп</option>
-  <option>Щи</option>
-  <option>Окрошка</option>
-</datalist>
-</body>
+<div class="slideshow">
+  <div class="slideshow__display">
+    <div class="slideshow__preloader"></div><img class="slideshow__display-img" src="images/slideshow/small/image1.png" data-zoom-image="images/slideshow/large/image1.jpg"/>
+  </div>
+  <ul class="slideshow__thumbs">
+    <li class="slideshow__thumbs-item" href="images/slideshow/small/image1.png" data-zoom-image="images/slideshow/large/image1.jpg"><a class="slideshow__thumbs-link"><img class="slideshow__thumbs-img" src="images/slideshow/thumb/image1.jpg"/></a></li>
+    <li class="slideshow__thumbs-item" href="images/slideshow/small/image2.png" data-zoom-image="images/slideshow/large/image2.jpg"><a class="slideshow__thumbs-link"><img class="slideshow__thumbs-img" src="images/slideshow/thumb/image2.jpg"/></a></li>
+    <li class="slideshow__thumbs-item" href="images/slideshow/small/image3.png" data-zoom-image="images/slideshow/large/image3.jpg"><a class="slideshow__thumbs-link"><img class="slideshow__thumbs-img" src="images/slideshow/large/image3.jpg"/></a></li>
+    <li class="slideshow__thumbs-item" href="images/slideshow/small/image4.png" data-zoom-image="images/slideshow/large/image4.jpg"><a class="slideshow__thumbs-link"><img class="slideshow__thumbs-img" src="images/slideshow/large/image4.jpg"/></a></li>
+  </ul>
+</div></body>
 <!-- END BODY -->
 </html>
