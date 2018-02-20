@@ -25,7 +25,7 @@
 <meta name="description" content = " {{ isset($meta_desc) ? $meta_desc: '' }}">
 <meta name="keywords" content = " {{ isset($keywords) ? $keywords: '' }}">
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<title> {{ $title or 'Pink' }}</title>
+<title> Разработка виджетов </title>
 <link rel="stylesheet" id="custom-css" href="css/main.css" type="text/css" media="all" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
@@ -42,6 +42,43 @@
     <ul class="slider_dots"></ul>
   </div>
   <div class="slider__controls"><a class="slider__controls-button slider__controls-button_next">></a><a class="slider__controls-button slider__controls-button_prev"><</a></div>
-</section></body>
+</section>
+<div class="tabs">
+  <ul class="tabs__controls">
+    <li class="tabs__controls-item active"><a class="tabs__controls-link" data-class="first" href="#">link 1</a></li>
+    <li class="tabs__controls-item active"><a class="tabs__controls-link" data-class="second" href="#">link 2</a></li>
+    <li class="tabs__controls-item active"><a class="tabs__controls-link" data-class="third" href="#">link 3</a></li>
+    <li class="tabs__controls-item active"><a class="tabs__controls-link" data-class="fourth" href="#">link 4</a></li>
+  </ul>
+  <ul class="tabs__list">
+    <li class="tabs__item tabs__item_first active">
+      <h2>Tab1</h2>
+      <p><span>Lorem ipsum dolor sit amet, per adhuc salutandi laboramus ex, ne choro possim deterruisset mel. Cu elit assum tollit qui, enim justo velit his an. An sed fugit inani diceret. Cum assum debet te. Ex saperet quaerendum vim, discere fuisset ut eum, te sint nihil disputando his. Mei noluisse appetere iudicabit ne, aliquip delenit pri eu</span></p>
+    </li>
+    <li class="tabs__item tabs__item_second">
+      <h2>Tab2</h2>
+      <p><span>Lorem ipsum dolor sit amet, per adhuc salutandi laboramus ex, ne choro possim deterruisset mel. Cu elit assum tollit qui, enim justo velit his an. An sed fugit inani diceret. Cum assum debet te. Ex saperet quaerendum vim, discere fuisset ut eum, te sint nihil disputando his. Mei noluisse appetere iudicabit ne, aliquip delenit pri eu</span></p>
+    </li>
+    <li class="tabs__item tabs__item_third">
+      <h2>Tab3</h2>
+      <p><span>Lorem ipsum dolor sit amet, per adhuc salutandi laboramus ex, ne choro possim deterruisset mel. Cu elit assum tollit qui, enim justo velit his an. An sed fugit inani diceret. Cum assum debet te. Ex saperet quaerendum vim, discere fuisset ut eum, te sint nihil disputando his. Mei noluisse appetere iudicabit ne, aliquip delenit pri eu</span></p>
+    </li>
+    <li class="tabs__item tabs__item_fourth">
+      <h2>Tab4</h2>
+      <p><span>Lorem ipsum dolor sit amet, per adhuc salutandi laboramus ex, ne choro possim deterruisset mel. Cu elit assum tollit qui, enim justo velit his an. An sed fugit inani diceret. Cum assum debet te. Ex saperet quaerendum vim, discere fuisset ut eum, te sint nihil disputando his. Mei noluisse appetere iudicabit ne, aliquip delenit pri eu</span></p>
+    </li>
+  </ul>
+</div>
+
+
+<input type="text" name="team" id="favorite_dish"
+       list="dish_list">
+<datalist id="dish_list">
+  <option>Борщ</option>
+  <option>Суп</option>
+  <option>Щи</option>
+  <option>Окрошка</option>
+</datalist>
+</body>
 <!-- END BODY -->
 </html>

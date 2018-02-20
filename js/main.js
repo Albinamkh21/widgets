@@ -1,4 +1,33 @@
+var tabs = (function () {
 
+    return {
+        init : function() {
+
+            $('.tabs__controls-link').on('click', function (e) {
+                e.preventDefault();
+                var
+                    item = $(this).closest('.tabs__controls-item'),
+                    container = item.closest('.tabs'),
+                    contentItems = container.find('.tabs__item'),
+                    //index =  item.index(),
+                    id = $(this).data('class')
+                   // items =  container.find('.tabs__controls-item');
+
+                contentItems.filter('.tabs__item_'+ id)
+                    .addClass('active')
+                    .siblings()
+                    .removeClass('active');
+
+                item
+                    .addClass('active')
+                    .siblings()
+                    .removeClass('active');
+
+
+            })
+        }
+    }
+}());
 
 
 
@@ -142,6 +171,10 @@ $(document).ready(function () {
 
     if($('.slider').length){
         slider.init();
+    };
+    if($('.tabs').length){
+        tabs.init();
     }
+
 
 })

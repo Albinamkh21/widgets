@@ -1,0 +1,34 @@
+.tabs__controls-item {
+  display: inline-block;
+  line-height: 14px;
+
+  margin-left: 10px;
+  background: #2c3e50;
+
+  &.hover, &.active {
+    background: #2ecc71;
+  }
+  &:first-child{
+    margin-left: 0px;
+  }
+}
+
+.tabs__controls-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 3px 7px;
+  transform: (0.2);
+}
+
+.tabs__list {
+  border: 1px dashed #CCCCCC;
+}
+.tabs__item {
+  list-style: none outside none;
+  display: none;
+  &.active {
+    display: block;
+  }
+}
